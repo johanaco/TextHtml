@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #007bff;
+    --hover-color: #0056b3;
+    --background-color: #f5f5f5;
+    --text-color: #495057;
+    --border-color: #ddd;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 600px; 
+    margin: auto; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white; 
+    text-align: center; 
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+textarea {
+    font-family: monospace;
+    height: 100px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    resize: vertical;
+}
+
+button {
+    margin: 1rem 0.5rem 0 0.5rem;
+    width: auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+button i {
+    margin-right: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.output-container {
+    position: relative;
+}
+
+textarea#outputText {
+    /* ... */
+    padding-right: 40px; 
+}
+
+button.copy-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: none; 
+    color: var(--primary-color); 
+}
+
+.particular {
+    font-size: 1.2rem; 
+    margin-bottom: 20px; 
+}
+
+
+
+.output-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f5f5f5; 
+    border-radius: 5px;
+}
+
+
+#copyButton {
+    margin-left: auto; 
+    background-color: #333; 
+    color: white; 
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px; 
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+
+
+#copyButton i {
+    margin-left: 8px;
+    font-size: 1.2em;
+}
+
+
+#copyButton span {
+    white-space: nowrap;
+}
+
+
+#copyButton:hover {
+    background-color: #444; 
+}
+
+#outputText {
+    flex-grow: 1;
+    margin-right: 10px; 
+    background-color: white; 
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    padding: 10px;
+    resize: none; 
+}

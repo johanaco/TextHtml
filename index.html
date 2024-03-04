@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador de Texto</h1>        
+        <label for="inputText">Ingresa el texto a encriptar:</label>
+        <div class="output-container">
+            <textarea id="inputText" placeholder="Escribe aquí..."></textarea>
+        </div>
+        
+        <button id="encryptButton">Encriptar</button>
+        <button id="decryptButton">Desencriptar</button>
+        <h2>Texto Encriptado</h2>
+        <div class="output-container">
+            <textarea id="outputText" placeholder="El texto encriptado aparecerá aquí" readonly></textarea>
+          
+            <button id="copyButton"> <i class="fas fa-copy"></i></button>
+        </div>
+        <div class="footer">
+            Hecho con ❤️ por JOHANA
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
